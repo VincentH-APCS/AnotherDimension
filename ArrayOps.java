@@ -57,10 +57,10 @@ public class ArrayOps{
  }
  public static boolean isRowMagic(int[][] matrix){
    int falsecheck = 0;
-   int[] thesums = ArrayOps.sumRows;
+   int[] thesums = ArrayOps.sumRows(matrix);
    for (int i = 0; i < thesums.length - 1; i++){
      if(thesums[i] != thesums[i + 1]){
-       falsecheck += 1
+       falsecheck += 1;
      }
    }
    if(falsecheck == 0){

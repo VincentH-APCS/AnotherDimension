@@ -79,3 +79,4 @@ public static boolean isLocationMagic(int[][] matrix, int row, int col){
   return ArrayOps.sum(matrix[row]) == ArrayOps.sum(column);
   }
 }
+// :)

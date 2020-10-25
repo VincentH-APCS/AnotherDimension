@@ -9,6 +9,6 @@ public class Tester{
   //System.out.println(ArrayOps.sum(arr));
   //System.out.println(Arrays.toString((ArrayOps.sumCols(arr))));
   //System.out.println(ArrayOps.isColMagic(arr));
-  System.out.println(ArrayOps.isLocationMagic(arr, 0, 1));
+  System.out.println(ArrayOps.isLocationMagic(arr, 1, 2));
   }
 }

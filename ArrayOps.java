@@ -32,14 +32,8 @@ public class ArrayOps{
       if (matrix[i][0] < 0){
         largest = matrix[i][0];
       }
-      for(int j = 0; j < matrix[i].length; j++){
-        if (matrix[i][j] > largest){
-          largest = matrix[i][j];
-        }
+      outcome[i] = largest(matrix[i]);
       }
-      outcome[i] = largest;
-      largest = 0;
-    }
     return outcome;
   }
   public static int sum(int[][] arr){
@@ -76,5 +70,8 @@ public class ArrayOps{
     }
   }
   return ArrayOps.isRowMagic(reverse);
+  }
+  public static boolean isLocationMagic(int[][] matrix, int row, int col){
+
   }
 }

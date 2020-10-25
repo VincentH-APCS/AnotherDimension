@@ -34,6 +34,6 @@ public class ArrayOps{
       outcome[i] = largest;
       largest = 0;
     }
+    return outcome;
   }
-  return outcome;
 }

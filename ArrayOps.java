@@ -28,10 +28,10 @@ public class ArrayOps{
   public static int[] largestInRows(int[][] matrix){
     int[] outcome = new int[matrix.length];
     int largest = 0;
-    if (matrix[0][0] < 0){
-      largest = matrix[0][0];
-    }
     for (int i = 0; i < matrix.length; i++){
+      if (matrix[i][0] < 0){
+        largest = matrix[i][0];
+      }
       for(int j = 0; j < matrix[i].length; j++){
         if (matrix[i][j] > largest){
           largest = matrix[i][j];

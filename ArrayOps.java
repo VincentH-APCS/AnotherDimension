@@ -68,4 +68,8 @@ public class ArrayOps{
    }
    else {return false;}
  }
+  public static boolean isColMagic(int[][] matrix){
+  int[][] reverse = new int[matrix[0].length][matrix.length];
+  return ArrayOps.isRowMagic(reverse);
+  }
 }

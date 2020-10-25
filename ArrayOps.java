@@ -37,8 +37,7 @@ public class ArrayOps{
     return outcome;
   }
   public static int sum(int[][] arr){
-    int[] sums = new int[arr.length];
-    sum[] = ArrayOps.sumRows(arr);
+    int[] sums = ArrayOps.sumRows(arr);
     return ArrayOps.sum(sums);
   }
 }

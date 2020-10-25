@@ -46,7 +46,13 @@ public class ArrayOps{
     int[] sums = ArrayOps.sumRows(arr);
     return ArrayOps.sum(sums);
   }
-  //public static int[] sumCols(int[][] matrix){
-
-//  }
+  public static int[] sumCols(int[][] matrix){
+    int[][] reverse = new int[matrix[0].length][matrix.length];
+    for(int i = 0; i < matrix.length; i++){
+      for(int j = 0; j < matrix[i].length; j++){
+        reverse[j][i] = matrix[i][j];
+      }
+    }
+  return ArrayOps.sumRows(reverse);
+ }
 }

@@ -70,8 +70,12 @@ public class ArrayOps{
     }
   }
   return ArrayOps.isRowMagic(reverse);
+ }
+public static boolean isLocationMagic(int[][] matrix, int row, int col){
+  int[] column = new int[matrix.length];
+  for(int i = 0; i < matrix.length; i++){
+    column[i] = matrix[i][col];
   }
-  public static boolean isLocationMagic(int[][] matrix, int row, int col){
-
+  return ArrayOps.sum(matrix[row]) == ArrayOps.sum(column);
   }
 }

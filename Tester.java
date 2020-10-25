@@ -1,7 +1,7 @@
 import java.util.Arrays;
 public class Tester{
   public static void main(String[] args){
-    int[][] arr = {{5,5,5},{5,5,5},{5,5,5},{5,5,5}};
+    int[][] arr = {{5,5,5},{15,0,0},{7,4,4},{13,2,0}};
   //System.out.println(ArrayOps.sum(arr));
   //System.out.println(ArrayOps.largest(arr));
   //System.out.println(Arrays.toString((ArrayOps.sumRows(arr))));

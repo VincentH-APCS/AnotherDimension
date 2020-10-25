@@ -55,4 +55,17 @@ public class ArrayOps{
     }
   return ArrayOps.sumRows(reverse);
  }
+ public static boolean isRowMagic(int[][] matrix){
+   int falsecheck = 0;
+   int[] thesums = ArrayOps.sumRows;
+   for (int i = 0; i < thesums.length - 1; i++){
+     if(thesums[i] != thesums[i + 1]){
+       falsecheck += 1
+     }
+   }
+   if(falsecheck == 0){
+     return true;
+   }
+   else {return false;}
+ }
 }

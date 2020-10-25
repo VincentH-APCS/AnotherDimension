@@ -15,4 +15,11 @@ public class ArrayOps{
     }
     return thelargest;
   }
+  public static int[] sumRows(int[][] matrix){
+    int[]answers = new int[matrix.length];
+    for (int i = 0; i < matrx.length; i++){
+      answers[i] = ArrayOps.sum(matrix[i]);
+    }
+    return answers;
+  }
 }
